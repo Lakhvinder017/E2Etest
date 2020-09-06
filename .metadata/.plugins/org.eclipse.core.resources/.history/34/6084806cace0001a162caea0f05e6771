@@ -1,0 +1,28 @@
+package E2ETest;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import pageObjects.Landingpage;
+import resources.Base;
+
+public class Homepage extends Base{
+
+	@Test
+	
+	public void pagenavigation() throws IOException, InterruptedException
+	{
+      driver = initilizeDriver();
+  
+		driver.get("http://rahulshettyacademy.com");
+		Thread.sleep(3000);
+		Landingpage login = new Landingpage(driver);
+		//login.getpop().click();
+		login.getlogin().click();
+
+		
+	}
+	
+	
+}

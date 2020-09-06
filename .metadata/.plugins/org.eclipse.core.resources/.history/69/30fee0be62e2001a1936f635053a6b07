@@ -1,0 +1,13 @@
+package E2ETest;
+
+public class MyClass {
+
+    private int number = 0;
+
+    public MyClass() {
+    }
+
+    public MyClass(int theNumber) {
+        this.number = theNumber;
+    }
+}
